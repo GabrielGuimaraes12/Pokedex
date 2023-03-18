@@ -1,0 +1,24 @@
+{
+    "_id": {
+        "$oid": "64153a7f559249843d1194bb"
+    },
+    "id": 12,
+    "name": {
+        "english": "Butterfree",
+        "japanese": "\u30d0\u30bf\u30d5\u30ea\u30fc",
+        "chinese": "\u5df4\u5927\u8776",
+        "french": "Papilusion"
+    },
+    "type": [
+        "Bug",
+        "Flying"
+    ],
+    "base": {
+        "HP": 60,
+        "Attack": 45,
+        "Defense": 50,
+        "Sp. Attack": 90,
+        "Sp. Defense": 80,
+        "Speed": 70
+    }
+}

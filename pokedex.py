@@ -11,18 +11,17 @@ class Pokedex:
         writeAJson(pokemons, "pokemons_by_type")
 
     def get_pokemon_by_id(self, pokemon_id):
-        response =  self.db.collection.find_one({'id': pokemon_id})
-        writeAJson(response, "get_pokemon_by_id")
+        pokemons =  self.db.collection.find_one({'id': pokemon_id})
+        writeAJson(pokemons, "get_pokemon_by_id")
 
     def get_all_pokemons(self):
-        response = list(self.db.collection.find())
-        writeAJson(response, "get_all_pokemons")
+        pokemons = list(self.db.collection.find())
+        writeAJson(pokemons, "get_all_pokemons")
 
     def get_pokemons_by_weakness(self, weaknesses):
         pokemons = self.db.collection.find({"weaknesses": {"$in": weaknesses}})
         writeAJson(pokemons, "pokemons_by_weakness.json")
 
-    def get_pokemons_by_candy(self, candy_amount):
-        pokemons = self.db.collection.find({"candy_count": {"$lte": candy_amount}})
-        writeAJson(pokemons, "pokemons_by_candy.json")
-
+    def get_pokemon_by_name(self, name):
+        response = self.db.collection.find_one({'name.english': name})
+        writeAJson(response, "get_pokemon_by_name")

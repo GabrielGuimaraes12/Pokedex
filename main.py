@@ -11,4 +11,4 @@ pokedex.get_all_pokemons()
 
 pokedex.get_pokemons_by_weakness(["Water", "Ice"])
 
-pokedex.get_pokemons_by_candy(70)
+pokedex.get_pokemon_by_name("Pikachu")

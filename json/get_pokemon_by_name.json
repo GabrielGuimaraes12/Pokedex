@@ -1,0 +1,23 @@
+{
+    "_id": {
+        "$oid": "64153a7f559249843d1194c8"
+    },
+    "id": 25,
+    "name": {
+        "english": "Pikachu",
+        "japanese": "\u30d4\u30ab\u30c1\u30e5\u30a6",
+        "chinese": "\u76ae\u5361\u4e18",
+        "french": "Pikachu"
+    },
+    "type": [
+        "Electric"
+    ],
+    "base": {
+        "HP": 35,
+        "Attack": 55,
+        "Defense": 40,
+        "Sp. Attack": 50,
+        "Sp. Defense": 50,
+        "Speed": 90
+    }
+}

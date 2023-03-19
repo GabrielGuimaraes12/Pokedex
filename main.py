@@ -9,6 +9,4 @@ pokedex.get_pokemon_by_id(12)
 
 pokedex.get_all_pokemons()
 
-pokedex.get_pokemons_by_weakness(["Water", "Ice"])
-
-pokedex.get_pokemon_by_name("Pikachu")
+pokedex.get_pokemon_by_HP(50)
